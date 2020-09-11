@@ -24,10 +24,9 @@
 namespace hardware_interface
 {
 /** A handle used to get and set a value on a given joint interface. */
-class JointHandle : public Handle<JointHandle>
+class HARDWARE_INTERFACE_PUBLIC JointHandle : public Handle<JointHandle>
 {
 public:
-  HARDWARE_INTERFACE_PUBLIC
   JointHandle(
     const std::string & name, const std::string & interface_name,
     double * value_ptr = nullptr)
